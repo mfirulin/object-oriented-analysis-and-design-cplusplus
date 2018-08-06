@@ -1,12 +1,12 @@
 #include "guitarspec.h"
 
-GuitarSpec::GuitarSpec(std::string model, int numStrings, Builder builder, Type type, Wood backWood, Wood topWood) :
+GuitarSpec::GuitarSpec(string model, int numStrings, Builder builder, Type type, Wood backWood, Wood topWood) :
     m_model(model), m_numStrings(numStrings), m_builder(builder), m_type(type), m_backWood(backWood), m_topWood(topWood)
 {
 
 }
 
-const std::string& GuitarSpec::model() const
+const string& GuitarSpec::model() const
 {
     return m_model;
 }

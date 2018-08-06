@@ -7,13 +7,13 @@
 class Guitar : public GuitarSpec
 {
 public:
-    Guitar(std::string serialNumber, double price, std::string model, int numStrings, Builder builder, Type type, Wood backWood, Wood topWood);
-    const std::string& serialNumber() const;
+    Guitar(string serialNumber, double price, string model, int numStrings, Builder builder, Type type, Wood backWood, Wood topWood);
+    const string& serialNumber() const;
     double price() const;
     void price(double price);
 
 private:
-   std::string m_serialNumber;
+   string m_serialNumber;
    double m_price;
 };
 

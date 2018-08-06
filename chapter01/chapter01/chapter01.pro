@@ -10,9 +10,6 @@ SOURCES += \
     inventory.cpp
 
 HEADERS += \
-    builder.h \
-    type.h \
-    wood.h \
     guitarspec.h \
     guitar.h \
     inventory.h

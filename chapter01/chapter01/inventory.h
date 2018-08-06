@@ -9,10 +9,10 @@ class Inventory
 {
 public:
     void add(const Guitar& guitar);
-    std::list<Guitar> search(const GuitarSpec& spec);
+    list<Guitar> search(const GuitarSpec& spec);
 
 private:
-    std::list<Guitar> guitars;
+    list<Guitar> guitars;
 };
 
 #endif // INVENTORY_H

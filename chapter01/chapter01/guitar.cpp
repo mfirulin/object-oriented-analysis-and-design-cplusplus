@@ -1,12 +1,12 @@
 #include "guitar.h"
 
-Guitar::Guitar(std::string serialNumber, double price, std::string model, int numStrings, Builder builder, Type type, Wood backWood, Wood topWood) :
+Guitar::Guitar(string serialNumber, double price, string model, int numStrings, Builder builder, Type type, Wood backWood, Wood topWood) :
     GuitarSpec(model, numStrings, builder, type, backWood, topWood), m_serialNumber(serialNumber), m_price(price)
 {
 
 }
 
-const std::string& Guitar::serialNumber() const
+const string& Guitar::serialNumber() const
 {
     return m_serialNumber;
 }
