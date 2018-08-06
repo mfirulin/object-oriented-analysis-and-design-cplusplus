@@ -2,6 +2,7 @@
 #define GUITAR_H
 
 #include <string>
+#include <ostream>
 #include "guitarspec.h"
 
 class Guitar : public GuitarSpec
@@ -13,8 +14,9 @@ public:
     void price(double price);
 
 private:
-   string m_serialNumber;
-   double m_price;
+    string m_serialNumber;
+    double m_price;
+    friend ostream& operator<<(ostream& os, const Guitar& guitar);
 };
 
 #endif // GUITAR_H

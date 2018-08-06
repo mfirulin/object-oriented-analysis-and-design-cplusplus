@@ -20,3 +20,8 @@ void Guitar::price(double price)
 {
     m_price = price;
 }
+
+ostream& operator<<(ostream& os, const Guitar& guitar)
+{
+    return os << "Guitar[Serial:" << guitar.serialNumber() << " Price:" << guitar.price() << "]";
+}
