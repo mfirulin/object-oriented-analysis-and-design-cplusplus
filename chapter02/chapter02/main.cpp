@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     cout << "Fido has all done..." << endl;
     cout << "... but he's stuck outside" << endl;
 
-    // Put sleep 10 sec here
+    // TODO: Put correct thread sleep here
     QThread::currentThread()->sleep(10);
 
     cout << "Fido starts barking..." << endl;
@@ -35,5 +35,5 @@ int main(int argc, char *argv[])
     cout << "Fido's back inside..." << endl;
     remote.pressButton();
 
-    return 0 /*a.exec()*/ ;
+    return a.exec();
 }

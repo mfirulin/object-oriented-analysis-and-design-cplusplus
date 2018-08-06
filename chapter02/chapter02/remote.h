@@ -2,7 +2,7 @@
 #define REMOTE_H
 
 #include <QObject>
-#include <QBasicTimer>
+#include <QTimerEvent>
 #include "dogdoor.h"
 
 class Remote : public QObject
@@ -13,8 +13,8 @@ public:
 
 private:
     DogDoor m_dogDoor;
-    QBasicTimer m_timer;
-    void timerEvent(QTimerEvent *);
+    int m_timerId = 0;
+    void timerEvent(QTimerEvent *event);
 };
 
 #endif // REMOTE_H
